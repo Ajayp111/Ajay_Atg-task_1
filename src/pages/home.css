@@ -1,0 +1,35 @@
+.banner-image {
+  height: 400px;
+  object-fit: cover;
+  max-width: 100%;
+}
+.grayscale-image {
+  filter: grayscale(10%);
+}
+@media (max-width: 767px) {
+  .cse {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.pencil-icon-container {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.pencil-icon {
+  font-size: 42px;
+  color: white;
+  background-color: tomato;
+  padding: 12px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.pencil-icon:hover {
+  background-color: red;
+}
