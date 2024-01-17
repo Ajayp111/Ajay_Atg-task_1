@@ -5,7 +5,7 @@ import cse from "../assets/img/Computer Engineering.png";
 import Cards from "../components/Cards";
 import SignIn from "../components/SignIn";
 import SignUp from "../components/SignUp";
-import { FaPencilAlt } from "react-icons/fa";
+import edit from "../assets/editPencil.svg";
 
 import { IoLocationOutline } from "react-icons/io5";
 import { MdEdit, MdInfoOutline } from "react-icons/md";
@@ -101,11 +101,12 @@ const Home = () => {
           <div className="d-flex d-md-none gap-4">
             <div className="dropdown">
               <button
-                className="btn btn-secondary dropdown-toggle fw-bold text-black"
+                className="btn btn-secondary dropdown-toggle fw-bold text-white "
                 type="button"
                 id="drpFilter"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                // style={{ backgroundColor: "gray" }}
               >
                 Filter: <span className="me-3">{filterValue}</span>
               </button>
@@ -198,10 +199,12 @@ const Home = () => {
       </div>
       {hasScrolled ? null : (
         <div
-          className="pencil-icon-container d-md-none"
+          className=" rounded-circle d-flex justify-content-center align-items-center position-fixed d-lg-none"
+          style={{ bottom: "18px", right: "18px" }}
           onClick={() => console.log("Pencil icon clicked!")}
         >
-          <FaPencilAlt className="pencil-icon" />
+          <img src={edit} alt="pencil" className="pencil-icon" />
+          {/* <img src={edit} alt="write a post" height={24} width={24} /> */}
         </div>
       )}
     </>

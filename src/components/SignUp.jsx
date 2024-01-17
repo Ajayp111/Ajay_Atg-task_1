@@ -1,13 +1,14 @@
-import { BsEyeFill, BsFacebook } from "react-icons/bs";
-import { FcGoogle } from "react-icons/fc";
 import formImg from "../assets/img/formImage/form.png";
+import facebook from "../assets/facebook.svg";
+import google from "../assets/google.svg";
+import eye from "../assets/eye.svg";
 
 const SignUp = () => {
   return (
     <div
       className="modal fade"
       id="signUp"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="signUpModalLabel"
       aria-hidden="true"
     >
@@ -22,10 +23,10 @@ const SignUp = () => {
         </div>
         <div className="modal-content">
           <div className="modal-header justify-content-center d-none d-md-block">
-            <p className="my-auto">
+            <h5 className="my-auto">
               Let's learn, share & inspire each other with our passion for
               computer engineering. Sign up now 🤘🏼
-            </p>
+            </h5>
           </div>
           <div className="modal-body">
             <div className="container-fluid">
@@ -71,7 +72,7 @@ const SignUp = () => {
                       className="w-100 border-0 form-inputs bg-light"
                       placeholder="Password"
                     />
-                    <BsEyeFill />
+                    <img src={eye} alt="eye" className="me-2" />
                   </div>
                   <div className="d-flex border border-1 bg-light p-2 align-items-center justify-content-between">
                     <input
@@ -79,7 +80,7 @@ const SignUp = () => {
                       className="w-100 border-0 form-inputs bg-light"
                       placeholder="Confirm Password"
                     />
-                    <BsEyeFill />
+                    <img src={eye} alt="eye" className="me-2" />
                   </div>
                   <div className="mt-4 d-flex d-md-block align-items-center justify-content-between">
                     <button className="btn btn-primary w-lg-100 w-md-50 rounded-pill">
@@ -95,12 +96,14 @@ const SignUp = () => {
                   </div>
                   <div className="mt-4">
                     <button className="btn btn-outline-primary text-black w-100">
-                      <BsFacebook className="me-2" /> Sign up with Facebook
+                      <img src={facebook} alt="facebook" className="me-2" />{" "}
+                      Sign up with Facebook
                     </button>
                   </div>
                   <div className="mt-1">
                     <button className="btn btn-outline-primary text-black w-100">
-                      <FcGoogle className="me-2" /> Sign up with Google
+                      <img src={google} alt="google" className="me-2" /> Sign up
+                      with Google
                     </button>
                   </div>
                 </div>
@@ -111,8 +114,14 @@ const SignUp = () => {
                     className="img-fluid d-none d-md-block"
                   />
                   <p className="fs-6 mt-sm-2 px-4 p-sm-0">
-                    By signing up, you agree to our Terms & conditions, Privacy
-                    policy
+                    By signing up, you agree to our{" "}
+                    <a href="/" className="text-primary">
+                      Terms & conditions
+                    </a>
+                    ,{" "}
+                    <a href="/" className="text-primary">
+                      Privacy policy
+                    </a>
                   </p>
                 </div>
               </div>

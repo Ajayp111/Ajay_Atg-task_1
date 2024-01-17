@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { BsEyeFill, BsFacebook } from "react-icons/bs";
-import { FcGoogle } from "react-icons/fc";
 
+import facebook from "../assets/facebook.svg";
+import google from "../assets/google.svg";
+import eye from "../assets/eye.svg";
 import formImg from "../assets/img/formImage/form.png";
 
 const SignIn = () => {
@@ -68,7 +69,9 @@ const SignIn = () => {
                       className="w-100 border-0 form-inputs bg-light"
                       placeholder="Password"
                     />
-                    <BsEyeFill
+                    <img
+                      src={eye}
+                      alt="Toggle Password Visibility"
                       onClick={handleTogglePassword}
                       style={{ cursor: "pointer" }}
                     />
@@ -87,13 +90,17 @@ const SignIn = () => {
                   </div>
                   <div className="mt-4">
                     <button className="btn btn-outline-primary text-black w-100">
-                      <BsFacebook className="me-2" />
+                      <img
+                        src={facebook}
+                        alt="Facebook Icon"
+                        className="me-2"
+                      />
                       Sign in with Facebook
                     </button>
                   </div>
                   <div className="mt-1">
                     <button className="btn btn-outline-primary text-black w-100">
-                      <FcGoogle className="me-2" />
+                      <img src={google} alt="Google Icon" className="me-2" />
                       Sign in with Google
                     </button>
                   </div>

@@ -16,3 +16,10 @@ const App = () => {
 };
 
 export default App;
+//  <div
+// className="btn circle-write-post rounded-circle d-flex justify-content-center align-items-center position-fixed d-lg-none"
+// style={{ bottom: "18px", right: "18px" }}
+// onClick={() => console.log("Pencil icon clicked!")}
+// >
+// <img src={edit} alt="write a post" height={24} width={24} />
+// </div>
